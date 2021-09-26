@@ -13,7 +13,6 @@ public class BinarySearch_704 {
 	// sau đó cứ tiếp tục chia rồi hỏi như vậy đến khi tìm được kết quả 
 	// người lại nếu ko tìm được thì chứng tỏ thằng đưa đáp án xạo l
 
-	
 	    public static int search(int[] nums, int target) {
 	    	Arrays.sort(nums);
 	    	int left = 0 ;
