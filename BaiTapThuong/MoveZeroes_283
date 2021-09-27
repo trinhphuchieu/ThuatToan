@@ -1,0 +1,65 @@
+class Solution {
+    /*
+    public void moveZeroes(int[] nums) {
+        int left = 0, right  = 1;
+        
+        while(left < nums.length-1)
+        {
+            if(nums[left] == 0 && nums[right] != 0)
+            {
+                swap(nums,left,right);
+            }else
+            {
+                int j = right;
+                int l = left;
+                while(j <= nums.length-1) {
+                    if(nums[j] != 0 && nums[l] == 0 ) 
+                    {
+                     swap(nums,l,j);   
+                    
+                    break;
+                    }
+                    j++;
+                }
+               
+               
+            }
+            left++;
+            right++;
+        }
+    
+
+    }
+    */
+    /*
+    public void moveZeroes(int[] nums)
+    {
+        int i  = 0 ;
+        for(int y = 0 ; y < nums.length; y ++){
+            if(nums[y] != 0 && nums[i] == 0 )
+            {
+                swap(nums,i,y);
+            }
+            if(nums[i]!=0) i++;
+        }    
+        
+
+    }
+    */
+        public void moveZeroes(int[] nums)
+    {
+        int i  = 0 ;
+        for(int y = 0 ; y < nums.length; y ++)
+        {
+            if(nums[y] != 0) nums[i++] = nums[y];
+        }    
+        while(i < nums.length) nums[i++] = 0;
+
+    }
+    public void swap(int [] nums, int i , int j)
+    {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;   
+    }
+}
