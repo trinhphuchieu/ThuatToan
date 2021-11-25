@@ -20,7 +20,7 @@ class Solution {
         HashSet<Integer> hs = new HashSet<Integer>();
         for(int i = 0 ; i < nums.length; i++)
         {
-            // có thể dùng thêm hs.contains(nums[i])) //
+            // có thể dùng thêm hs.contains(nums[i])) 
             if(!hs.add(nums[i])) return true;
         }
         return false;
